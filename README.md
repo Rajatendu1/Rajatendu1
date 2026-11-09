@@ -22,9 +22,12 @@ Routing, failover, streaming, per-key rate limits and usage metering behind one 
 
 A reference implementation of RFC 8693 token exchange, where permissions can only shrink down a delegation chain, with DPoP-style sender constraints and a hash-chained audit log.
 
-| Unit and integration tests | End-to-end HTTP checks | Restart-durability checks | Two-process revocation checks |
-| :---: | :---: | :---: | :---: |
-| **220** | **47** | **11** | **6** |
+| Verified checks | Passed |
+| :--- | ---: |
+| Unit and integration tests | **220** |
+| End-to-end HTTP checks | **47** |
+| Restart-durability checks | **11** |
+| Two-process revocation checks | **6** |
 
 **[Live demo →](https://actas-rajatendu.vercel.app)** - includes a policy workbench for what-if policy review.
 
