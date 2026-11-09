@@ -1,6 +1,6 @@
 <p align="center"><img src="./1-header.png" alt="Rajatendu Dey - Backend engineer: distributed systems, auth and identity" width="100%" /></p>
 
-Backend engineer with 4+ years building distributed backend systems, authentication and identity infrastructure, and AI-powered applications. Formerly SDE II at AWS (UnifiedAuth); previously HSBC and HighRadius.
+Backend engineer building distributed backend systems, authentication and identity infrastructure, and AI-powered applications. Formerly SDE II at AWS (UnifiedAuth) and an engineer at HSBC; previously a machine learning intern at HighRadius.
 
 ## Current projects
 
