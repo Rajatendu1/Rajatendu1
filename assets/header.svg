@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="t d">
+<title id="t">Rajatendu Dey</title><desc id="d">Backend engineer: distributed systems, auth and identity, AI-powered applications.</desc>
+<defs>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#163047" stroke-opacity=".3"/></pattern>
+<radialGradient id="hhalo" cx=".3" cy=".45" r=".9"><stop stop-color="#1c2f52"/><stop offset="1" stop-color="#070d18"/></radialGradient>
+<linearGradient id="neongrad" x1="0" y1="0" x2="1" y2="0">
+<stop stop-color="#9de8d0"/><stop offset=".55" stop-color="#7cc7ff"/><stop offset="1" stop-color="#a5b5ff"/>
+</linearGradient>
+<filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+<feGaussianBlur stdDeviation="7" result="b1"/>
+<feGaussianBlur stdDeviation="18" result="b2"/>
+<feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace}
+.signal{stroke-dasharray:3 13;animation:signal 5s linear infinite}
+.route{stroke-dasharray:8 75;animation:route 3s linear infinite}
+.gate{animation:gate 5s ease-in-out infinite}
+.pulse{animation:pulse 4s ease-in-out infinite}
+.orbit{animation:turn 32s linear infinite;transform-box:fill-box;transform-origin:center}
+.satellite{animation:turn 9s linear infinite;transform-origin:0 0}
+.satellite.reverse{animation-direction:reverse;animation-duration:13s}
+.sonar{animation:sonar 4s ease-out infinite;transform-origin:0 0}
+.glowpulse{animation:glowpulse 5s ease-in-out infinite}
+.flicker{animation:flicker 7s linear infinite}
+.draw{stroke-dasharray:900;animation:draw 9s ease-in-out infinite}
+@keyframes signal{to{stroke-dashoffset:-160}}
+@keyframes route{to{stroke-dashoffset:-166}}
+@keyframes gate{0%,20%,85%,100%{opacity:.2}40%,65%{opacity:1}}
+@keyframes pulse{50%{opacity:.3}}
+@keyframes turn{to{transform:rotate(360deg)}}
+@keyframes sonar{0%{transform:scale(.4);opacity:0}20%{opacity:.7}100%{transform:scale(1.7);opacity:0}}
+@keyframes glowpulse{50%{opacity:.55}}
+@keyframes flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}96%{opacity:.75}97%{opacity:1}}
+@keyframes draw{0%{stroke-dashoffset:900}60%,100%{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="1200" height="260" rx="16" fill="url(#hhalo)"/>
+<rect width="1200" height="260" rx="16" fill="url(#grid)"/>
+<rect x="1" y="1" width="1198" height="258" rx="15" fill="none" stroke="#26364a"/>
+<path d="M22 22H58M22 22V58M1178 238H1142M1178 238V202" fill="none" stroke="#9de8d0" stroke-width="1.5"/>
+<text x="48" y="66" font-size="13" fill="#9de8d0" letter-spacing="6">RAJATENDU / BACKEND ENGINEER</text>
+<g class="flicker">
+<text x="44" y="152" font-size="76" font-weight="bold" fill="url(#neongrad)" filter="url(#neon)">Rajatendu Dey</text>
+</g>
+<text x="48" y="196" font-size="15" fill="#a7b8ce" letter-spacing="1">Distributed systems  ·  auth &amp; identity  ·  AI-powered applications</text>
+<text x="48" y="226" font-size="12" fill="#5b7186" letter-spacing="2">EX-AWS SDE II (UNIFIEDAUTH)  ·  EX-HSBC  ·  BANGALORE / REMOTE</text>
+<g stroke="#7cc7ff" fill="none" opacity=".7">
+<path d="M820 210H900L928 186H1010L1038 214H1152" stroke-opacity=".25"/>
+<path class="route" d="M820 210H900L928 186H1010L1038 214H1152"/>
+<circle class="gate" cx="900" cy="210" r="3" fill="#7cc7ff"/>
+<circle class="gate" style="animation-delay:-1.2s" cx="1010" cy="186" r="3" fill="#7cc7ff"/>
+</g>
+<g transform="translate(1050 92)">
+<circle class="orbit" r="58" fill="none" stroke="#9de8d0" stroke-opacity=".55" stroke-dasharray="30 11 2 11"/>
+<circle class="orbit" style="animation-direction:reverse;animation-duration:47s" r="44" fill="none" stroke="#a5b5ff" stroke-opacity=".4" stroke-dasharray="18 8 2 8"/>
+<g fill="none" stroke="#9de8d0" stroke-width="1.5" color="#9de8d0">
+<circle r="30" fill="currentColor" fill-opacity=".07" stroke="none"/>
+<path d="M0-16V0M0 0L-14 12M0 0L14 12"/>
+<circle cy="-19" r="4.5"/><circle cx="-14" cy="12" r="4.5"/><circle cx="14" cy="12" r="4.5"/><circle r="3"/>
+<path class="route" d="M0-19V0L-14 12M0 0L14 12" stroke-width="2"/>
+</g>
+<g class="satellite"><circle cx="66" r="3" fill="#9de8d0"/></g>
+<g class="satellite reverse"><circle cy="-70" r="2.2" fill="#edf3ff"/></g>
+</g>
+<path d="M48 244H360" stroke="#26364a"/>
+<path class="signal" d="M48 244H360" stroke="#9de8d0"/>
+</svg>
