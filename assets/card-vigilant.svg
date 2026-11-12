@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="270" viewBox="0 0 580 270" role="img" aria-labelledby="t d">
+<title id="t">Vigilant - equity research agent</title><desc id="d">An AI-assisted Indian equity research workspace that turns a stock name into a structured, evidence-backed investment view.</desc>
+<defs>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#163047" stroke-opacity=".3"/></pattern>
+<radialGradient id="halo"><stop stop-color="#233759"/><stop offset="1" stop-color="#080e19"/></radialGradient>
+</defs>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace}
+.signal{stroke-dasharray:3 13;animation:signal 5s linear infinite}
+.route{stroke-dasharray:8 75;animation:route 3s linear infinite}
+.gate{animation:gate 5s ease-in-out infinite}
+.pulse{animation:pulse 4s ease-in-out infinite}
+.orbit{animation:turn 32s linear infinite;transform-box:fill-box;transform-origin:center}
+.satellite{animation:turn 9s linear infinite;transform-origin:0 0}
+.satellite.reverse{animation-direction:reverse;animation-duration:13s}
+.sonar{animation:sonar 4s ease-out infinite;transform-origin:0 0}
+.glowpulse{animation:glowpulse 5s ease-in-out infinite}
+.flicker{animation:flicker 7s linear infinite}
+.draw{stroke-dasharray:900;animation:draw 9s ease-in-out infinite}
+@keyframes signal{to{stroke-dashoffset:-160}}
+@keyframes route{to{stroke-dashoffset:-166}}
+@keyframes gate{0%,20%,85%,100%{opacity:.2}40%,65%{opacity:1}}
+@keyframes pulse{50%{opacity:.3}}
+@keyframes turn{to{transform:rotate(360deg)}}
+@keyframes sonar{0%{transform:scale(.4);opacity:0}20%{opacity:.7}100%{transform:scale(1.7);opacity:0}}
+@keyframes glowpulse{50%{opacity:.55}}
+@keyframes flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}96%{opacity:.75}97%{opacity:1}}
+@keyframes draw{0%{stroke-dashoffset:900}60%,100%{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="580" height="270" rx="14" fill="url(#halo)"/>
+<rect width="580" height="270" rx="14" fill="url(#grid)"/>
+<rect x="1" y="1" width="578" height="268" rx="13" fill="none" stroke="#26364a"/>
+<path d="M20 20H48M20 20V48M560 250H532M560 250V222" fill="none" stroke="#f0a35e"/>
+<text x="32" y="43" font-size="12" fill="#f0a35e" letter-spacing="2">03 / RESEARCH</text>
+<text x="32" y="94" font-size="32" fill="#edf3ff">Vigilant</text>
+<text x="32" y="132" font-size="12" fill="#a7b8ce">AI-assisted Indian equity research, evidence-backed.</text>
+<text x="32" y="243" font-size="12" fill="#f0a35e" letter-spacing="1">EXPLORE PROJECT</text>
+<g transform="translate(183 237)"><path d="M-4-5L2 0-4 5M3-5L9 0 3 5" fill="none" stroke="#f0a35e"/></g>
+<path d="M32 105H208" stroke="#f0a35e" stroke-width="2"/>
+<circle class="pulse" cx="548" cy="32" r="3" fill="#f0a35e"/>
+<g transform="translate(492 76)">
+<circle class="orbit" r="47" fill="none" stroke="#f0a35e" stroke-opacity=".5" stroke-dasharray="25 9 2 9"/>
+<g fill="none" stroke="#f0a35e" stroke-width="1.5" color="#f0a35e">
+<circle r="39" fill="currentColor" fill-opacity=".06" stroke="none"/>
+
+<path d="M-24 20H24M-24 20V-22"/>
+<path class="draw" d="M-20 12L-8-2L2 6L14-10L22-14" stroke-width="2.5"/>
+<circle cx="-8" cy="-2" r="3" fill="currentColor"/><circle cx="14" cy="-10" r="3" fill="currentColor"/>
+<circle class="sonar" r="12"/>
+</g>
+<g class="satellite"><circle cx="54" r="2.5" fill="#f0a35e"/></g>
+<g class="satellite reverse"><circle cy="-57" r="1.8" fill="#edf3ff"/></g>
+</g>
+<g stroke="#f0a35e" fill="none" opacity=".65" transform="translate(0 0)">
+<path d="M34 194H120L148 170H240L270 204H380L408 178H548" stroke-opacity=".2"/>
+<path class="route" d="M34 194H120L148 170H240L270 204H380L408 178H548"/>
+<path d="M34 211H166L192 187H320L348 221H548" stroke-opacity=".2"/>
+<circle class="gate" cx="120" cy="194" r="3" fill="#f0a35e"/>
+<circle class="gate" style="animation-delay:-0.8s" cx="240" cy="170" r="3" fill="#f0a35e"/>
+<circle class="gate" style="animation-delay:-1.6s" cx="380" cy="204" r="3" fill="#f0a35e"/>
+<circle class="gate" style="animation-delay:-2.4s" cx="548" cy="178" r="3" fill="#f0a35e"/>
+</g>
+<path d="M260 239H548" stroke="#26364a"/>
+<path class="signal" d="M260 239H548" stroke="#f0a35e"/>
+</svg>
