@@ -67,10 +67,8 @@ Further patches under review upstream across Python, Rust, JavaScript and TypeSc
 
 ## GitHub
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Rajatendu1&show_icons=true&hide_border=true&bg_color=080e19&title_color=9de8d0&icon_color=7cc7ff&text_color=a7b8ce" alt="Rajatendu's GitHub stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rajatendu1&layout=compact&hide_border=true&bg_color=080e19&title_color=9de8d0&text_color=a7b8ce" alt="Top languages" height="165" />
-</p>
+<p align="center"><img src="assets/github-snapshot.svg" alt="GitHub snapshot: 14 followers, 41 public repos, 20 owned non-fork, 17 stars. Verified 12 Nov 2026." width="100%" /></p>
+
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=Rajatendu1&hide_border=true&background=080e19&ring=9de8d0&fire=f0a35e&currStreakLabel=9de8d0&sideLabels=a7b8ce&dates=5b7186&currStreakNum=edf3ff&sideNums=edf3ff" alt="GitHub streak" />
 </p>
