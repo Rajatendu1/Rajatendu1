@@ -58,7 +58,7 @@ Selected issues and ongoing contributions:
 - **[jsh9/pydoclint #333](https://github.com/jsh9/pydoclint/pull/333)** - recognizes `yield` expressions outside expression statements. Pull request open.
 - **[pytorch/pytorch #204781](https://github.com/pytorch/pytorch/issues/204781)** - reported that `torch._numpy.pad` silently crops input for a negative `pad_width`. Issue open.
 - **[mongodb/bson-rust #717](https://github.com/mongodb/bson-rust/issues/717)** - reported that `DateTime` conversions disagree for pre-epoch timestamps with sub-millisecond precision. Issue open.
-- **[facelessuser/wcmatch #278](https://github.com/facelessuser/wcmatch/issues/278)** - reported that REALPATH glob matching rejects a symlink path returned by `glob`. Issue open.
+- **[facelessuser/wcmatch #278](https://github.com/facelessuser/wcmatch/issues/278)** - reported that REALPATH glob matching rejects a symlink path returned by `glob`. Closed 13 Nov 2026: fixed upstream by the maintainer ([c816a4de](https://github.com/facelessuser/wcmatch/commit/c816a4de3d22d42c4e96f53c74995072458803c9)) after the report; a resolved report, not a merged patch from us.
 
 Further patches open upstream across Python, Rust, JavaScript and TypeScript projects.
 
