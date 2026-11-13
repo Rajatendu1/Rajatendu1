@@ -47,6 +47,16 @@ Merged upstream:
 - **[authlib #1031](https://github.com/authlib/authlib/pull/1031)** - fixed default-port handling for IPv6 hosts in OAuth 1.0a signature base-string URIs, with regression tests across IPv4/IPv6 and default, non-default and missing ports. Merged 10 Nov 2026.
 - **[gookit/goutil #316](https://github.com/gookit/goutil/pull/316)** - `timex` now decodes JSON strings before parsing dates: escaped timestamps decode correctly, numbers can no longer be misread as dates, and `0`/`1` no longer cause a slice-bounds panic. Merged 12 Nov 2026.
 
+
+Selected issues and ongoing contributions:
+
+- **[graphql/graphql-js #5002](https://github.com/graphql/graphql-js/pull/5002)** - adds `hideSuggestions` support when building and extending schemas. Pull request open, under review.
+- **[msgspec/msgspec #1342](https://github.com/msgspec/msgspec/pull/1342)** - preserves and validates typed `TypedDict` extra items. Pull request open, under review.
+- **[microsoft/pyright #12010](https://github.com/microsoft/pyright/pull/12010)** - fixes stale CLI watch diagnostics after file deletion. Pull request open, under review.
+- **[graphql-python/graphene #1612](https://github.com/graphql-python/graphene/pull/1612)** - fixes enum construction after registering an enum named `type`. Pull request open, under review.
+- **[pytorch/pytorch #204781](https://github.com/pytorch/pytorch/issues/204781)** - reported that `torch._numpy.pad` silently crops input for a negative `pad_width`. Issue open.
+- **[facelessuser/wcmatch #278](https://github.com/facelessuser/wcmatch/issues/278)** - reported that REALPATH glob matching rejects a symlink path returned by `glob`. Issue open.
+
 Further patches under review upstream across Python, Rust, JavaScript and TypeScript projects.
 
 <a id="evidence-with-receipts"></a>
