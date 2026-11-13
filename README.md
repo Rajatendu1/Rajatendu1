@@ -50,11 +50,14 @@ Merged upstream:
 
 Selected issues and ongoing contributions:
 
+- **[pyenv/pyenv #3633](https://github.com/pyenv/pyenv/pull/3633)** - makes `python-build` honor custom dependency header flags. Pull request open; approved by a maintainer, awaiting merge.
 - **[graphql/graphql-js #5002](https://github.com/graphql/graphql-js/pull/5002)** - adds `hideSuggestions` support when building and extending schemas. Pull request open.
 - **[msgspec/msgspec #1342](https://github.com/msgspec/msgspec/pull/1342)** - preserves and validates typed `TypedDict` extra items. Pull request open.
 - **[microsoft/pyright #12010](https://github.com/microsoft/pyright/pull/12010)** - fixes stale CLI watch diagnostics after file deletion. Pull request open.
 - **[graphql-python/graphene #1612](https://github.com/graphql-python/graphene/pull/1612)** - fixes enum construction after registering an enum named `type`. Pull request open.
+- **[jsh9/pydoclint #333](https://github.com/jsh9/pydoclint/pull/333)** - recognizes `yield` expressions outside expression statements. Pull request open.
 - **[pytorch/pytorch #204781](https://github.com/pytorch/pytorch/issues/204781)** - reported that `torch._numpy.pad` silently crops input for a negative `pad_width`. Issue open.
+- **[mongodb/bson-rust #717](https://github.com/mongodb/bson-rust/issues/717)** - reported that `DateTime` conversions disagree for pre-epoch timestamps with sub-millisecond precision. Issue open.
 - **[facelessuser/wcmatch #278](https://github.com/facelessuser/wcmatch/issues/278)** - reported that REALPATH glob matching rejects a symlink path returned by `glob`. Issue open.
 
 Further patches open upstream across Python, Rust, JavaScript and TypeScript projects.
