@@ -48,21 +48,10 @@ Merged upstream:
 - **[gookit/goutil #316](https://github.com/gookit/goutil/pull/316)** - `timex` now decodes JSON strings before parsing dates: escaped timestamps decode correctly, numbers can no longer be misread as dates, and `0`/`1` no longer cause a slice-bounds panic. Merged 12 Nov 2026.
 - **[gorakhargosh/watchdog #1458](https://github.com/gorakhargosh/watchdog/pull/1458)** - strengthened the `EventDebouncer` tests in watchdog: the old starvation test also passed with elapsed-time flushing removed, so the rewritten tests synchronize the debouncer lifecycle and add regressions that fail under that mutation. Test-only, no production code changed. Merged 14 Nov 2026.
 - **[nushell/reedline #1303](https://github.com/nushell/reedline/pull/1303)** - fixed fallback completion highlighting: the fallback searched a lowercased copy and returned UTF-8 byte offsets where the styler expects grapheme indices, so underlining drifted after accents, emoji and case expansions; offsets now map back to the original displayed graphemes. Public API unchanged; 18 added cases with the library suite and doctests passing locally. Merged 14 Nov 2026.
+- **[sqlfluff/sqlfluff #9140](https://github.com/sqlfluff/sqlfluff/pull/9140)** - added PostgreSQL `CREATE TRANSFORM` and `DROP TRANSFORM` parsing to SQLFluff: scripts that define procedural-language type conversions (like the `hstore_plpython` extension) now lint without parse errors. Fixtures cover both conversion directions, optional signatures, schema-qualified and quoted names, `IF EXISTS` and `CASCADE`/`RESTRICT`, validated against native PostgreSQL 18 grammar via pglast. Merged 15 Nov 2026.
 
 
-Selected issues and ongoing contributions:
-
-- **[pyenv/pyenv #3633](https://github.com/pyenv/pyenv/pull/3633)** - makes `python-build` honor custom dependency header flags. Pull request open; approved by a maintainer, awaiting merge.
-- **[graphql/graphql-js #5002](https://github.com/graphql/graphql-js/pull/5002)** - adds `hideSuggestions` support when building and extending schemas. Pull request open.
-- **[msgspec/msgspec #1342](https://github.com/msgspec/msgspec/pull/1342)** - preserves and validates typed `TypedDict` extra items. Pull request open.
-- **[microsoft/pyright #12010](https://github.com/microsoft/pyright/pull/12010)** - fixes stale CLI watch diagnostics after file deletion. Pull request open.
-- **[graphql-python/graphene #1612](https://github.com/graphql-python/graphene/pull/1612)** - fixes enum construction after registering an enum named `type`. Pull request open.
-- **[jsh9/pydoclint #333](https://github.com/jsh9/pydoclint/pull/333)** - recognizes `yield` expressions outside expression statements. Pull request open.
-- **[pytorch/pytorch #204781](https://github.com/pytorch/pytorch/issues/204781)** - reported that `torch._numpy.pad` silently crops input for a negative `pad_width`. Issue open.
-- **[mongodb/bson-rust #717](https://github.com/mongodb/bson-rust/issues/717)** - reported that `DateTime` conversions disagree for pre-epoch timestamps with sub-millisecond precision. Issue open.
-- **[facelessuser/wcmatch #278](https://github.com/facelessuser/wcmatch/issues/278)** - reported that REALPATH glob matching rejects a symlink path returned by `glob`. Closed 13 Nov 2026: fixed upstream by the maintainer ([c816a4de](https://github.com/facelessuser/wcmatch/commit/c816a4de3d22d42c4e96f53c74995072458803c9)) after the report; a resolved report, not a merged patch from us.
-
-Further patches open upstream across Python, Rust, JavaScript and TypeScript projects.
+Open work continues upstream across Python, Rust, JavaScript and TypeScript projects; highlights stay capped at the five most recent merged contributions and earlier entries remain in GitHub history.
 
 <a id="evidence-with-receipts"></a>
 <p align="center"><img src="assets/section-evidence.svg" alt="Evidence, with receipts" width="100%" /></p>
