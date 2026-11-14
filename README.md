@@ -46,6 +46,7 @@ Merged upstream:
 
 - **[authlib #1031](https://github.com/authlib/authlib/pull/1031)** - fixed default-port handling for IPv6 hosts in OAuth 1.0a signature base-string URIs, with regression tests across IPv4/IPv6 and default, non-default and missing ports. Merged 10 Nov 2026.
 - **[gookit/goutil #316](https://github.com/gookit/goutil/pull/316)** - `timex` now decodes JSON strings before parsing dates: escaped timestamps decode correctly, numbers can no longer be misread as dates, and `0`/`1` no longer cause a slice-bounds panic. Merged 12 Nov 2026.
+- **[gorakhargosh/watchdog #1458](https://github.com/gorakhargosh/watchdog/pull/1458)** - strengthened the `EventDebouncer` tests in watchdog: the old starvation test also passed with elapsed-time flushing removed, so the rewritten tests synchronize the debouncer lifecycle and add regressions that fail under that mutation. Test-only, no production code changed. Merged 14 Nov 2026.
 
 
 Selected issues and ongoing contributions:
