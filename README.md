@@ -26,7 +26,7 @@ Backend engineer building distributed backend systems, authentication and identi
 <td width="50%"><a href="https://github.com/Rajatendu1/actas"><img src="assets/card-actas.svg" width="100%" alt="actas: delegation tokens for AI agents. Explore the repository." /></a></td>
 </tr>
 <tr>
-<td width="50%"><a href="https://github.com/Rajatendu1/equity-research-agent"><img src="assets/card-vigilant.svg" width="100%" alt="Vigilant: AI-assisted Indian equity research. Explore the repository." /></a></td>
+<td width="50%"><a href="https://github.com/Rajatendu1/paper-trading-india"><img src="assets/card-papertrading.svg" width="100%" alt="paper-trading-india: paper-only, reproducible Indian equity experiments. Explore the repository." /></a></td>
 <td width="50%"><a href="https://github.com/Rajatendu1/engineering-portfolio"><img src="assets/card-portfolio.svg" width="100%" alt="Engineering portfolio. Explore the repository." /></a></td>
 </tr>
 </table>
@@ -35,7 +35,7 @@ Backend engineer building distributed backend systems, authentication and identi
 
 **actas** - an RFC 8693 token-exchange reference implementation where permissions can only shrink down a delegation chain, with DPoP-style sender constraints and a hash-chained audit log. **[Live demo →](https://actas-rajatendu.vercel.app)** · **[Source →](https://github.com/Rajatendu1/actas)**
 
-**Vigilant** - turns an Indian stock name into a structured, evidence-backed investment view. **[Source →](https://github.com/Rajatendu1/equity-research-agent)**
+**paper-trading-india** - a paper-only experiment tracker for Indian equities: a three-year historical simulation with an itemized cost model, logged decisions, and a 449-check script that reproduces every published number. Not investment advice. **[Source →](https://github.com/Rajatendu1/paper-trading-india)**
 
 Both live demos are tested working prototypes, not production services. llmgate keys reach the simulated providers only; two real free-tier Groq models sit behind explicit buttons.
 
@@ -44,11 +44,11 @@ Both live demos are tested working prototypes, not production services. llmgate 
 
 Merged upstream:
 
-- **[gookit/goutil #316](https://github.com/gookit/goutil/pull/316)** - `timex` now decodes JSON strings before parsing dates: escaped timestamps decode correctly, numbers can no longer be misread as dates, and `0`/`1` no longer cause a slice-bounds panic. Merged 12 Nov 2026.
 - **[gorakhargosh/watchdog #1458](https://github.com/gorakhargosh/watchdog/pull/1458)** - strengthened the `EventDebouncer` tests in watchdog: the old starvation test also passed with elapsed-time flushing removed, so the rewritten tests synchronize the debouncer lifecycle and add regressions that fail under that mutation. Test-only, no production code changed. Merged 14 Nov 2026.
 - **[nushell/reedline #1303](https://github.com/nushell/reedline/pull/1303)** - fixed fallback completion highlighting: the fallback searched a lowercased copy and returned UTF-8 byte offsets where the styler expects grapheme indices, so underlining drifted after accents, emoji and case expansions; offsets now map back to the original displayed graphemes. Public API unchanged; 18 added cases with the library suite and doctests passing locally. Merged 14 Nov 2026.
 - **[sqlfluff/sqlfluff #9140](https://github.com/sqlfluff/sqlfluff/pull/9140)** - added PostgreSQL `CREATE TRANSFORM` and `DROP TRANSFORM` parsing to SQLFluff: scripts that define procedural-language type conversions (like the `hstore_plpython` extension) now lint without parse errors. Fixtures cover both conversion directions, optional signatures, schema-qualified and quoted names, `IF EXISTS` and `CASCADE`/`RESTRICT`, validated against native PostgreSQL 18 grammar via pglast. Merged 15 Nov 2026.
 - **[pyenv/pyenv #3633](https://github.com/pyenv/pyenv/pull/3633)** - fixed python-build's custom dependency header detection: `configured_with_package_dir` only inspected global `CPPFLAGS` alongside a `CPPFLAGS=` configure argument, missed package-specific flags, and read the make-option array instead of the configure-option array, so a custom Readline header path could be ignored and Homebrew's paths prepended ahead of the user's. Now global and package-specific `CPPFLAGS` are checked independently against the configure options. Merged 15 Nov 2026.
+- **[jgrapht/jgrapht #1417](https://github.com/jgrapht/jgrapht/pull/1417)** - replaced the recursive biconnectivity DFS with explicit heap frames: deep graphs that overflowed the Java call stack now traverse in the same O(V + E) time with the public API and lazy computation unchanged. Tests include 10,000-vertex paths and cycles that fail with `StackOverflowError` before the fix under `-Xss1m`, and all 1,024 simple graphs on five vertices checked against independent oracles. Merged 17 Nov 2026.
 
 
 Open work continues upstream across Python, Rust, JavaScript and TypeScript projects; highlights stay capped at the five most recent merged contributions and earlier entries remain in GitHub history.
@@ -60,6 +60,7 @@ Open work continues upstream across Python, Rust, JavaScript and TypeScript proj
 | --- | --- | --- |
 | llmgate | 11 Nov 2026 | **274** pytest cases, **61** local end-to-end HTTP checks, a JavaScript smoke gate, plus Docker image and Compose smoke checks in CI |
 | actas | 11 Nov 2026 | **48** pytest cases, **17** integration checks, **26** process checks, plus desktop and mobile browser workflows (new post-recovery checks; the original development suite was not recovered) |
+| paper-trading-india | 14 Nov 2026 | **31** pytest cases plus a **449**-check independent reproduction of every published EXP-001 number, all passing |
 
 **[Full evidence notes →](https://files.instinct.com/2b6sxnm5u1fv-rajatendu-dey-engineering-portfolio)**
 
