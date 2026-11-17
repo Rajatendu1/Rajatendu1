@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="270" viewBox="0 0 580 270" role="img" aria-labelledby="t d">
+<title id="t">paper-trading-india - paper-only trading experiments</title><desc id="d">A public paper-trading experiment tracker for Indian equities: logged decisions, an itemized cost model and an independent reproduction script for every published number.</desc>
+<defs>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#163047" stroke-opacity=".3"/></pattern>
+<radialGradient id="halo"><stop stop-color="#233759"/><stop offset="1" stop-color="#080e19"/></radialGradient>
+</defs>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',monospace}
+.signal{stroke-dasharray:3 13;animation:signal 5s linear infinite}
+.route{stroke-dasharray:8 75;animation:route 3s linear infinite}
+.gate{animation:gate 5s ease-in-out infinite}
+.pulse{animation:pulse 4s ease-in-out infinite}
+.draw{stroke-dasharray:900;animation:draw 9s ease-in-out infinite}
+@keyframes signal{to{stroke-dashoffset:-160}}
+@keyframes route{to{stroke-dashoffset:-166}}
+@keyframes gate{0%,20%,85%,100%{opacity:.2}40%,65%{opacity:1}}
+@keyframes pulse{50%{opacity:.3}}
+@keyframes draw{0%{stroke-dashoffset:900}60%,100%{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="580" height="270" rx="14" fill="url(#halo)"/>
+<rect width="580" height="270" rx="14" fill="url(#grid)"/>
+<rect x="1" y="1" width="578" height="268" rx="13" fill="none" stroke="#26364a"/>
+<path d="M20 20H48M20 20V48M560 250H532M560 250V222" fill="none" stroke="#9de8d0"/>
+<text x="32" y="43" font-size="12" fill="#9de8d0" letter-spacing="2">03 / MARKET DATA</text>
+<text x="32" y="94" font-size="28" fill="#edf3ff">paper-trading-india</text>
+<text x="32" y="132" font-size="12" fill="#a7b8ce">Paper-only equity experiments, every number reproducible.</text>
+<text x="32" y="243" font-size="12" fill="#9de8d0" letter-spacing="1">EXPLORE PROJECT</text>
+<g transform="translate(183 237)"><path d="M-4-5L2 0-4 5M3-5L9 0 3 5" fill="none" stroke="#9de8d0"/></g>
+<path d="M32 105H208" stroke="#9de8d0" stroke-width="2"/>
+<circle class="pulse" cx="548" cy="32" r="3" fill="#9de8d0"/>
+<g transform="translate(430 158)" stroke="#9de8d0" fill="none">
+<g stroke-opacity=".55">
+<path d="M0 40V14M-5 22L0 14L5 22"/><rect x="-6" y="22" width="12" height="18"/>
+<path d="M24 34V8M19 16L24 8L29 16"/><rect x="18" y="16" width="12" height="14" fill="#9de8d0" fill-opacity=".15"/>
+<path d="M48 44V20M43 28L48 20L53 28"/><rect x="42" y="28" width="12" height="16"/>
+<path d="M72 30V2M67 10L72 2L77 10"/><rect x="66" y="10" width="12" height="12" fill="#9de8d0" fill-opacity=".15"/>
+<path d="M96 38V12M91 20L96 12L101 20"/><rect x="90" y="20" width="12" height="18"/>
+</g>
+<path d="M-12 52H120" stroke="#26364a"/>
+<path class="signal" d="M-12 52H120"/>
+</g>
+<g stroke="#9de8d0" fill="none" opacity=".65">
+<path d="M34 194H120L148 178H240L270 206H380L408 184H548" stroke-opacity=".2"/>
+<path class="route" d="M34 194H120L148 178H240L270 206H380L408 184H548"/>
+<path d="M34 214H166L192 196H320L348 222H548" stroke-opacity=".2"/>
+<circle class="gate" cx="120" cy="194" r="3" fill="#9de8d0"/>
+<circle class="gate" style="animation-delay:-0.8s" cx="240" cy="178" r="3" fill="#9de8d0"/>
+<circle class="gate" style="animation-delay:-1.6s" cx="380" cy="206" r="3" fill="#9de8d0"/>
+<circle class="gate" style="animation-delay:-2.4s" cx="548" cy="184" r="3" fill="#9de8d0"/>
+</g>
+<path d="M260 239H548" stroke="#26364a"/>
+<path class="signal" d="M260 239H548" stroke="#9de8d0"/>
+</svg>
