@@ -72,7 +72,7 @@ Open work continues upstream across Python, Rust, JavaScript and TypeScript proj
 
 ## GitHub
 
-<p align="center"><img src="assets/github-snapshot.svg" alt="GitHub snapshot: 14 followers, 41 public repos, 20 owned non-fork, 17 stars. Verified 12 Nov 2026." width="100%" /></p>
+<p align="center"><img src="assets/github-snapshot.svg" alt="GitHub snapshot: 14 followers, 62 public repos, 21 owned non-fork, 17 stars. Verified 17 Nov 2026." width="100%" /></p>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=Rajatendu1&hide_border=true&background=080e19&ring=9de8d0&fire=f0a35e&currStreakLabel=9de8d0&sideLabels=a7b8ce&dates=5b7186&currStreakNum=edf3ff&sideNums=edf3ff" alt="GitHub streak" />
