@@ -53,6 +53,18 @@ Merged upstream:
 
 Open work continues upstream across Python, Rust, JavaScript and TypeScript projects; highlights stay capped at the five most recent merged contributions and earlier entries remain in GitHub history.
 
+<a id="bug-reports-and-investigations"></a>
+## Bug reports and investigations
+
+Reported upstream, separate from the merged contributions above. All four reports were open and unassigned when checked on 17 Nov 2026. These are local reproductions, not observed Microsoft Graph or Google Cloud incidents, and not maintainer-confirmed fixes.
+
+- **[microsoft/kiota-python #900](https://github.com/microsoft/kiota-python/issues/900) - Redirect errors that exhaust a connection pool.** Streaming responses left open on redirect-limit or request-construction errors blocked a later request in a one-connection localhost test. Nine regression/control cases: six fail before cleanup, all nine pass with the local candidate. Local candidate only; no PR submitted.
+- **[microsoft/kiota-python #901](https://github.com/microsoft/kiota-python/issues/901) - Detached models restored into a backing store.** Stale nested-model subscriptions can restore replaced or cleared values; replacement edits can go untracked. This is a backing-store API reproduction, not demonstrated HTTP PATCH corruption. 18 focused cases: 16 fail on baseline, all 18 pass with the local candidate; 282 package tests pass. Local candidate only; no PR submitted.
+- **[googleapis/google-cloud-python #19103](https://github.com/googleapis/google-cloud-python/issues/19103) - Non-blocking refresh after credential serialization.** A pickle roundtrip leaves OAuth2 credentials without the worker expected by non-blocking refresh, causing missing-worker exceptions for stale or expired tokens. Nine mocked local cases: four failures and five passing controls; no real token or network request. Reproduction only; no fix implementation or PR.
+- **[googleapis/google-cloud-python #19104](https://github.com/googleapis/google-cloud-python/issues/19104) - Async retry drops a recovery yield.** AsyncStreamingRetry discards a value yielded while handling athrow(), skipping recovery output and disrupting the following send. Eight local cases: three failures and five passing controls on Python 3.10 and 3.13; no Cloud requests. Reproduction only; no fix implementation or PR.
+
+Investigation, candidate patches and reproduction tests developed with Instinct, my AI assistant, at my direction. Each report discloses AI assistance.
+
 <a id="evidence-with-receipts"></a>
 <p align="center"><img src="assets/section-evidence.svg" alt="Evidence, with receipts" width="100%" /></p>
 
